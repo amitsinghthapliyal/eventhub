@@ -40,6 +40,7 @@ This is a simplified event management web application built using **Next.js** an
 
 
 ## 3. Directory Structure
+```text
 eventhub/
 ├── lib/
 │   └── db.ts                 # Utility to handle SQLite database connection and queries.
@@ -52,12 +53,12 @@ eventhub/
 │   │   └── register.ts       # API route to handle event registration submissions.
 │   │
 │   ├── admin/
-│   │   └── database.tsx         # Admin dashboard page showing analytics like popular events and daily stats.
-│   │
+│   │   └── dashboard.tsx      # Admin dashboard page showing analytics like popular events and daily stats.
+│
 │   ├── events/
-│   │   └── [id].tsx          # Frontend page to display details for a specific event.
-        └── index.tsx          # Frontend page to listing all upcoming events.
-│   │
+│   │   ├── [id].tsx          # Frontend page to display details for a specific event.
+│   │   └── index.tsx         # Frontend page to list all upcoming events.
+│
 │   └── _app.tsx              # Custom App component to initialize pages and global styles.
 │
 ├── sql/
@@ -67,14 +68,16 @@ eventhub/
 │   └── globals.css           # Global CSS styles including Tailwind directives.
 │
 ├── data.db                   # SQLite database file storing all event and registration data.
-├── Document.md           
-├── README.md                
+├── Document.md              
+├── README.md                 
 ├── next-env.d.ts            
 ├── package-lock.json         
 ├── package.json              
-├── postcss.config.js        
-├── tailwind.config.js       
-└── tsconfig.json             
+├── postcss.config.js         # PostCSS configuration used with Tailwind CSS.
+├── tailwind.config.js        # Tailwind CSS configuration file.
+└── tsconfig.json            
+```
+           
 
 
 ---
