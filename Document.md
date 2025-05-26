@@ -32,15 +32,52 @@ This is a simplified event management web application built using **Next.js** an
 ---
 
 ## 3. Performance Considerations
-1. Added lazy loading and pagination on UI & apis to reduce payload size
+1. Added lazy loading and pagination on UI & apis to reduce payload size.
+2. Optimized sql queries.
+3. Reduced API response size by excluding redundant data, leading to faster client-side rendering and lower bandwidth usage.
 
 ---
 
 
-## 3. Directory Structure changes
-Added pages/admin/adshboard for admin analytics page
+## 3. Directory Structure
+eventhub/
+├── lib/
+│   └── db.ts                 # Utility to handle SQLite database connection and queries.
+│
+├── pages/
+│   ├── api/
+│   │   ├── events/
+│   │   │   ├── [id].ts       # API route to fetch a single event by ID.
+│   │   │   └── index.ts      # API route to fetch all events.
+│   │   └── register.ts       # API route to handle event registration submissions.
+│   │
+│   ├── admin/
+│   │   └── database.tsx         # Admin dashboard page showing analytics like popular events and daily stats.
+│   │
+│   ├── events/
+│   │   └── [id].tsx          # Frontend page to display details for a specific event.
+        └── index.tsx          # Frontend page to listing all upcoming events.
+│   │
+│   └── _app.tsx              # Custom App component to initialize pages and global styles.
+│
+├── sql/
+│   ├── schema.sql            # SQL script to define database schema (tables, fields).
+│
+├── styles/
+│   └── globals.css           # Global CSS styles including Tailwind directives.
+│
+├── data.db                   # SQLite database file storing all event and registration data.
+├── Document.md           
+├── README.md                
+├── next-env.d.ts            
+├── package-lock.json         
+├── package.json              
+├── postcss.config.js        
+├── tailwind.config.js       
+└── tsconfig.json             
+
 
 ---
 
 ## 4. Conclusion
-This implementation prioritizes clarity, performance, and scalability. With raw SQL optimizations, modular frontend, and attention to potential bottlenecks, the system is well-equipped to handle large datasets and high concurrency.
+This implementation prioritizes clarity, performance, and scalability. With raw SQL optimizations, modular frontend, the system is well-equipped to handle large datasets and high concurrency.
