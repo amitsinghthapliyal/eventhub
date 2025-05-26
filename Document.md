@@ -77,10 +77,27 @@ eventhub/
 ├── tailwind.config.js        # Tailwind CSS configuration file.
 └── tsconfig.json            
 ```
-           
+
+## Screenshots
+
+### Event Listing Page
+![Event Listing](https://github.com/user-attachments/assets/0bc781e7-94d9-4296-8f38-287e4c0924a7)
+
+---
+
+### Event Details and Registration Form Page
+![Registration Form](https://github.com/user-attachments/assets/bee53420-558d-4d09-91a0-9553516fb5b1)
+
+---
+
+### Admin Dashboard
+![Admin Dashboard](https://github.com/user-attachments/assets/1ba6c0ef-9b75-4930-9061-bcd65aeab63b)
+
+
+
 
 
 ---
 
-## 4. Conclusion
+## 5. Conclusion
 This implementation prioritizes clarity, performance, and scalability. With raw SQL optimizations, modular frontend, the system is well-equipped to handle large datasets and high concurrency.
