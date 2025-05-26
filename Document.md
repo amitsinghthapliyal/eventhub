@@ -39,7 +39,7 @@ This is a simplified event management web application built using **Next.js** an
 ---
 
 
-## 3. Directory Structure
+## 4. Directory Structure
 ```text
 eventhub/
 ├── lib/
@@ -78,7 +78,7 @@ eventhub/
 └── tsconfig.json            
 ```
 
-## Screenshots
+## 5. Screenshots
 
 ### Event Listing Page
 ![Event Listing](https://github.com/user-attachments/assets/0bc781e7-94d9-4296-8f38-287e4c0924a7)
@@ -99,5 +99,5 @@ eventhub/
 
 ---
 
-## 5. Conclusion
+## 6. Conclusion
 This implementation prioritizes clarity, performance, and scalability. With raw SQL optimizations, modular frontend, the system is well-equipped to handle large datasets and high concurrency.
